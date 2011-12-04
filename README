@@ -1,0 +1,18 @@
+1- Installation :
+
+	a. You need to have Epsilon installed in your Eclipse instance.
+		http://www.eclipse.org/downloads/download.php?file=/modeling/gmt/epsilon/org.eclipse.epsilon_0.9.1_incubation.zip
+		
+		Make sure to have all the necessary Modeling stuff related to Ecore (EMF).
+		
+	b. git clone the repository in your Eclipse's workspace and import the project as standard Eclipse project.
+	
+2- Testing : 
+	
+	a. Run the project as standard Eclipse application
+	b. In the newly executed eclipse workspace, create a new project, and a new ecore model in it
+	c. Open the ecore model
+	d. Create a EPackage and give it a name
+	e. Right-click on the EPackage, you will see "Wizards", then select "Set properties of nested packages"
+	f. Check that the EPackage informations have been set by the wizard, by right-clicking on it,
+			select "Show Properties view" and check for informations to be set.
