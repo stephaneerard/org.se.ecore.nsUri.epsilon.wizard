@@ -1,0 +1,26 @@
+wizard setNestedPackagesInfos {
+
+    guard : self.isTypeOf(EPackage)
+
+    title : 'Set properties of nested packages'
+
+    do{
+	    for(package in EPackage.allInstances() ){
+		    package.nsPrefix := package.name.toLowerCase();
+		    package.nsUri := package.generateNsUri();
+	    }
+    }
+}
+
+operation EPackage generateNsUri () : String {
+	var ret : String;
+	if(self.eSuperPackage.isDefined())
+	{
+		ret := self.eSuperPackage.generateNsUri() + '/' + self.name;
+	}
+	else
+	{
+		ret := self.nsUri;
+	}
+	return ret;
+}

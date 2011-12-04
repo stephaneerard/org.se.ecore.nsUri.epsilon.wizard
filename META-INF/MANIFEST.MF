@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ecore EPackage NSURI Wizard
+Bundle-SymbolicName: org.se.ecore.nsUri.epsilon.wizard;singleton:=true
+Bundle-Version: 1.0.0.stable
+Bundle-Activator: org.se.ecore.nsuri.epsilon.wizard.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.epsilon.ewl.dt;bundle-version="0.9.1",
+ org.eclipse.epsilon.ewl.emf;bundle-version="0.9.1",
+ org.eclipse.epsilon.ewl.engine;bundle-version="0.9.1",
+ org.eclipse.epsilon.ewl.gmf;bundle-version="0.9.1"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Stéphane Erard <stephane.erard@gmail.com>
