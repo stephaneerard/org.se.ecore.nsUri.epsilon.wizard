@@ -4,7 +4,7 @@
    <extension
          point="org.eclipse.epsilon.ewl.emf.wizards">
       <wizards
-            file="src/ecore.nsUri.ewl"
+            file="bin/ecore.nsUri.ewl"
             namespaceURI="http://www.eclipse.org/emf/2002/Ecore">
       </wizards>
    </extension>

@@ -1,3 +1,5 @@
+import "ecore.EPackage.nsUri.eol";
+
 wizard setNestedPackagesInfos {
 
     guard : self.isTypeOf(EPackage)
@@ -12,15 +14,3 @@ wizard setNestedPackagesInfos {
     }
 }
 
-operation EPackage generateNsUri () : String {
-	var ret : String;
-	if(self.eSuperPackage.isDefined())
-	{
-		ret := self.eSuperPackage.generateNsUri() + '/' + self.name;
-	}
-	else
-	{
-		ret := self.nsUri;
-	}
-	return ret;
-}

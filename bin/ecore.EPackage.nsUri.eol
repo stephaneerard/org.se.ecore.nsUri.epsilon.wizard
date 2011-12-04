@@ -1,0 +1,12 @@
+operation EPackage generateNsUri () : String {
+	var ret : String;
+	if(self.eSuperPackage.isDefined())
+	{
+		ret := self.eSuperPackage.generateNsUri() + '/' + self.name;
+	}
+	else
+	{
+		ret := self.nsUri;
+	}
+	return ret;
+}

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Ecore EPackage NSURI Wizard
-Bundle-SymbolicName: org.se.ecore.nsUri.epsilon.wizard;singleton:=true
+Bundle-SymbolicName: org.se.ecore.nsuri.epsilon.wizard;singleton:=true
 Bundle-Version: 1.0.0.stable
 Bundle-Activator: org.se.ecore.nsuri.epsilon.wizard.Activator
 Require-Bundle: org.eclipse.ui,
